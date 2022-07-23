@@ -1,0 +1,57 @@
+.ExpenseFrom-wrapper{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.ExpenseForm-element{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.ExpenseForm-element input{
+    height: 2rem;
+    margin: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.ExpenseForm-element input:focus{
+    outline: none;
+}
+
+.ExpenseForm-element label{
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.btn-NewExpense button{
+    background-color: rgb(67, 4, 126);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+}
+
+.btn-NewExpense{
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+}
+
+
+@media (max-width: 599px){
+    .ExpenseFrom-wrapper{
+        display: block;
+    }
+
+    .btn-NewExpense{
+        position: relative;
+        text-align: center;
+        margin-top: 2rem;
+    }
+}

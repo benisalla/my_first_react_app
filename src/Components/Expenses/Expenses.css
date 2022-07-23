@@ -1,0 +1,18 @@
+.Expenses-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+    margin: 1rem auto;
+}
+
+.Expenses-items{
+    margin: 20px 5px;
+}
+
+.NotFound{
+    color: red;
+    text-align: center;
+    border: 3px red solid;
+    padding: 20px 0;
+}

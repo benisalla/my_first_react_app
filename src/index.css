@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  font-family: sans-serif;
+  background-color: #3a3024;
+  scrollbar-width: 0px;
+  overflow-x:  hidden;
+}

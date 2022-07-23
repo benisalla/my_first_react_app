@@ -1,0 +1,25 @@
+.chartBar-content{
+    height: 12rem;
+    padding: 0.6rem 1rem;
+    padding-bottom: 2.5rem;
+}
+
+.bar-content{
+    border-radius: 1rem;
+    background-color: #fff;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.barLevel{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #0c08eb;
+}
+
+.chartBar-title{
+    padding-top: 1rem;
+    color: #fff;
+}

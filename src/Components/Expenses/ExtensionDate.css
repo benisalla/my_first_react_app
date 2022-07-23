@@ -1,0 +1,23 @@
+.Extension-date{
+    background-color: rgb(36, 33, 33);
+    border: 2px #fff solid;
+    border-radius: 10px;
+    margin-left: 1rem;
+    width: 70px;
+    padding: 0.6rem 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.Extension-date__month{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.Extension-date__year{
+    margin-top: 4px;
+    font-size: 12px;
+}
+.Extension-date__day{
+    margin-top: 4px;
+    font-weight: bold;
+}

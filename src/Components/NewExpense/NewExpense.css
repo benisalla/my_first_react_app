@@ -1,0 +1,8 @@
+.NewExpense-container{
+    background-color: rgb(7, 80, 149);
+    width: 100%;
+    margin: 1rem auto;
+    height: fit-content;
+    border: none;
+    border-radius: 10px;;
+}
