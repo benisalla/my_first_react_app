@@ -33,8 +33,9 @@
     color: #fff;
     border: none;
     border-radius: 10px;
-    padding: 1rem 3rem;
+    padding: 0.8rem 1rem;
     font-size: 1rem;
+    margin: 0.4rem;
 }
 
 .btn-NewExpense{

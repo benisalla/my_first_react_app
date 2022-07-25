@@ -71,11 +71,11 @@ const ExpenseForm = (props) => {
     // }
 
     const submitHandler = (event) =>{
-        // event.preventDefault();
+        event.preventDefault();
     }
 
-    const AddExpenseChangeHandler = (event) => {
-
+    const AddExpenseClickHandler = (event) => {
+        console.log("adding is pressed")
         const enteredExpenseData = {
             name : enteredName,
             amount : enteredAmount,
@@ -89,7 +89,8 @@ const ExpenseForm = (props) => {
         setEnteredDate("");
     }
 
-    const CancelChangeHandler = (event)=>{
+    const CancelClickHandler = (event)=>{
+        console.log("canceling is pressed")
         props.onCancelClicked();
         console.log("from CancelChangeHandler");
     }
@@ -103,15 +104,15 @@ const ExpenseForm = (props) => {
                 </div>
                 <div className="ExpenseForm-element">
                     <label>Amount</label>
-                    <input type='number' name="amount" value={enteredAmount} min={0.5} max={9999} step={0.5} onChange={AmountChangeHandler}/>
+                    <input type='number' name="amount" value={enteredAmount} min={1} max={9999} step={0.1} onChange={AmountChangeHandler}/>
                 </div>
                 <div className="ExpenseForm-element">
                     <label>Date</label>
                     <input type='date' name="date" value={enteredDate} onChange={DateChangeHandler}/>
                 </div>
                 <div className="btn-NewExpense">
-                    <button onChange={CancelChangeHandler}>Cancel</button>
-                    <button onChange={AddExpenseChangeHandler}>Add Expense</button>
+                    <button onClick={CancelClickHandler}>Cancel</button>
+                    <button onClick={AddExpenseClickHandler}>Add Expense</button>
                 </div>
             </div>
         </form>

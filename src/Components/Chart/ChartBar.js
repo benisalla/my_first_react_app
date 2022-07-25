@@ -3,7 +3,11 @@ import './ChartBar.css';
 
 const ChartBar = (props) =>{
 
-    const level = (props.value/props.maxValue)*100+"%";
+    let level = "0%";
+    if(props.maxValue > 0){
+        level = (props.value/props.maxValue)*100+"%";
+    }
+
     return (
         <div className="chartBar-content">
             <div className="bar-content">

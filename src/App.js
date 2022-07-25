@@ -25,12 +25,10 @@ const __INITIALISE__=[
   }
 ];
 
-const __INI_MAX__ = Math.max(...__INITIALISE__.map((ele) => ele.amount))
-
 const App = () => {
 
   const [ExpenseData, setNewExpenseDate] = useState(__INITIALISE__);
-  const [maxValue,setMaxValue] = useState(__INI_MAX__);
+  const [FilYear, setFilYear] = useState(__INITIALISE__[0].date.getFullYear());
 
   const SaveNewExpenseData = (enteredExpenseData) =>{
     setNewExpenseDate( (prevState) => {
@@ -40,9 +38,11 @@ const App = () => {
       ]);
     }
     );
-
-    setMaxValue(Math.max(...ExpenseData.map((ele) => ele.amount)));
   };
+  
+  const FilterChangeHandler = (FilteredYear) =>{
+    setFilYear(FilteredYear);
+  }
 
   return (
     <div className="MyApp">
@@ -51,10 +51,7 @@ const App = () => {
           <NewExpense onSaveNewExpenseData={SaveNewExpenseData}/>
         </div>
         <div>
-          <Chart maxValue={maxValue} Items={ExpenseData}/>
-        </div>
-        <div>
-          <Expenses Items={ExpenseData}/>
+          <Expenses Items={ExpenseData} onFilterChangeHandler={FilterChangeHandler}/>
         </div>
       </div>
     </div>
